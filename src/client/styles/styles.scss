@@ -1,9 +1,9 @@
-@color_lightblue: #52b9e9;
-@color_blue: #1171a3;
-@color_success: #43c83c;
-@color_warning: #f88529;
-@color_important: #fa3031;
-@color_violet: #932ab6;
+$color_lightblue: #52b9e9;
+$color_blue: #1171a3;
+$color_success: #43c83c;
+$color_warning: #f88529;
+$color_important: #fa3031;
+$color_violet: #eebd19;
 
 * {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
@@ -68,13 +68,12 @@ body {
     background: #111;
     padding-top: 45px;
     -webkit-font-smoothing: antialiased;
-}
-
-    body .container {
+    .container {
         width: 97%;
         padding-left: 1.5%;
         padding-right: 1.5%;
     }
+}
 
 h1, h2, h3, h4, h5, h6 {
     padding: 2px 0;
@@ -186,7 +185,7 @@ a.btn {
 /* Button colors */
 
 .btn.btn-primary {
-    background: @color_blue !important;
+    background: #{$color_blue} !important;
 }
 
     .btn.btn-primary:hover {
@@ -194,7 +193,7 @@ a.btn {
     }
 
 .btn.btn-info {
-    background: @color_lightblue !important;
+    background: #{$color_lightblue} !important;
 }
 
     .btn.btn-info:hover {
@@ -202,7 +201,7 @@ a.btn {
     }
 
 .btn.btn-success {
-    background: @color_success !important;
+    background: #{$color_success} !important;
 }
 
     .btn.btn-success:hover {
@@ -210,7 +209,7 @@ a.btn {
     }
 
 .btn.btn-warning {
-    background: @color_warning !important;
+    background: #{$color_warning} !important;
 }
 
     .btn.btn-warning:hover {
@@ -218,7 +217,7 @@ a.btn {
     }
 
 .btn.btn-danger {
-    background: @color_important !important;
+    background: #{$color_important} !important;
 }
 
     .btn.btn-danger:hover {
@@ -229,59 +228,59 @@ a.btn {
 
 .label.label-success,
 .badge.badge-success {
-    background: @color_success !important;
+    background: #{$color_success} !important;
 }
 
 .label.label-warning,
 .badge.badge-warning {
-    background: @color_warning !important;
+    background: #{$color_warning} !important;
 }
 
 .label.label-important,
 .badge.badge-important {
-    background: @color_important !important;
+    background: #{$color_important} !important;
 }
 
 .label.label-info,
 .badge.badge-info {
-    background: @color_lightblue !important;
+    background: #{$color_lightblue} !important;
 }
 
 /* Background colors */
 
 
 .blightblue {
-    background: @color_lightblue !important;
+    background: #{$color_lightblue} !important;
     color: #fff !important;
     border: 0 !important;
 }
 
 .bblue {
-    background: @color_blue !important;
+    background: #{$color_blue} !important;
     color: #fff !important;
     border: 0 !important;
 }
 
 .bgreen {
-    background: @color_success !important;
+    background: #{$color_success} !important;
     color: #fff !important;
     border: 0 !important;
 }
 
 .borange {
-    background: @color_warning !important;
+    background: #{$color_warning} !important;
     color: #fff !important;
     border: 0 !important;
 }
 
 .bred {
-    background: @color_important !important;
+    background: #{$color_important} !important;
     color: #fff !important;
     border: 0 !important;
 }
 
 .bviolet {
-    background: @color_violet !important;
+    background: #{$color_violet} !important;
     color: #fff !important;
     border: 0 !important;
 }
@@ -316,27 +315,27 @@ a.btn {
 /* Text colors */
 
 .lightblue {
-    color: @color_lightblue !important;
+    color: #{$color_lightblue} !important;
 }
 
 .blue {
-    color: @color_blue !important;
+    color: #{$color_blue} !important;
 }
 
 .green {
-    color: @color_success !important;
+    color: #{$color_success} !important;
 }
 
 .orange {
-    color: @color_warning !important;
+    color: #{$color_warning} !important;
 }
 
 .red {
-    color: @color_important !important;
+    color: #{$color_important} !important;
 }
 
 .violet {
-    color: @color_violet !important;
+    color: #{$color_violet} !important;
 }
 
 
@@ -395,7 +394,7 @@ form {
     bottom: 0;
     left: 0;
     z-index: 104400;
-    background: @color_important;
+    background: #{$color_important};
     display: none;
 }
 
@@ -513,35 +512,34 @@ form {
 
 .navbar {
     background: #000;
-}
 
-    .navbar .container {
+    .container {
         width: 97% !important;
     }
 
-    .navbar .nav > li > a {
+    .nav > li > a {
         font-size: 13px !important;
         color: #fff !important;
     }
 
-    .navbar i {
+    i {
         margin-right: 3px;
     }
 
-    .navbar .caret {
+    .caret {
         border-top-color: #fff !important;
         border-bottom-color: #fff !important;
     }
 
-    .navbar .nav-user-pic {
+    .nav-user-pic {
         width: 20px;
         margin-right: 10px;
     }
 
-    .navbar .badge {
+    .badge {
         margin-left: 5px;
     }
-
+}
 
 /* Sidebar */
 
@@ -552,23 +550,23 @@ form {
     background: #111;
     color: #eee;
     position: relative;
-}
 
-    .sidebar hr {
+    hr {
         border-bottom: 1px solid #333 !important;
     }
 
-    .sidebar ul {
+    ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-    }
 
-        .sidebar ul li {
+
+        li {
             list-style-type: none;
         }
+    }
 
-    .sidebar .sidebar-inner {
+    .sidebar-inner {
         display: block;
         width: 100%;
         margin: 0 auto;
@@ -577,15 +575,15 @@ form {
         background: #111;
     }
 
-    .sidebar .navi li i {
+    .navi li i {
         margin-right: 5px;
     }
 
-    .sidebar .navi li span i {
+    .navi li span i {
         margin: 0;
     }
 
-    .sidebar .navi > li > a {
+    .navi > li > a {
         display: block;
         padding: 12px 20px;
         font-size: 15px;
@@ -596,22 +594,22 @@ form {
         background-color: #111;
     }
 
-        .sidebar .navi > li > a:hover, .sidebar .navi > li.open > a {
-            border-bottom: 1px solid #222;
-            background-color: #222;
-            color: #fff;
-        }
+    .navi > li > a:hover, .navi > li.open > a {
+        border-bottom: 1px solid #222;
+        background-color: #222;
+        color: #fff;
+    }
 
-    .sidebar .navi li ul {
+    .navi li ul {
         display: none;
         background: #181818;
     }
 
-    .sidebar .navi li.open ul {
+    .navi li.open ul {
         display: block;
     }
 
-    .sidebar .navi li ul li a {
+    .navi li ul li a {
         display: block;
         background: none;
         padding: 10px 0;
@@ -621,93 +619,93 @@ form {
         border-bottom: 1px solid #222;
     }
 
-    .sidebar .navi li ul li.active a {
+    .navi li ul li.active a {
         background: #131313;
         border-bottom: 1px solid #222;
     }
 
-    .sidebar .navi li ul li a:hover {
+    .navi li ul li a:hover {
         background: #131313;
         border-bottom: 1px solid #222;
     }
 
     /* Sidebar colors */
 
-    .sidebar .navi > li.nlightblue > a:hover,
-    .sidebar .navi > li.open.nlightblue > a,
-    .sidebar .navi > li.current.nlightblue > a {
-        background: @color_lightblue !important;
+    .navi > li.nlightblue > a:hover,
+    .navi > li.open.nlightblue > a,
+    .navi > li.current.nlightblue > a {
+        background: #{$color_lightblue} !important;
         transition: background 0.5s ease;
     }
 
-    .sidebar .navi > li.nblue > a:hover,
-    .sidebar .navi > li.open.nblue > a,
-    .sidebar .navi > li.current.nblue > a {
-        background: @color_blue !important;
+    .navi > li.nblue > a:hover,
+    .navi > li.open.nblue > a,
+    .navi > li.current.nblue > a {
+        background: #{$color_blue} !important;
         transition: background 0.5s ease;
     }
 
-    .sidebar .navi > li.ngreen > a:hover,
-    .sidebar .navi > li.open.ngreen > a,
-    .sidebar .navi > li.current.ngreen > a {
-        background: @color_success !important;
+    .navi > li.ngreen > a:hover,
+    .navi > li.open.ngreen > a,
+    .navi > li.current.ngreen > a {
+        background: #{$color_success} !important;
         transition: background 0.5s ease;
     }
 
-    .sidebar .navi > li.norange > a:hover,
-    .sidebar .navi > li.open.norange > a,
-    .sidebar .navi > li.current.norange > a {
-        background: @color_warning !important;
+    .navi > li.norange > a:hover,
+    .navi > li.open.norange > a,
+    .navi > li.current.norange > a {
+        background: #{$color_warning} !important;
         transition: background 0.5s ease;
     }
 
-    .sidebar .navi > li.nred > a:hover,
-    .sidebar .navi > li.open.nred > a,
-    .sidebar .navi > li.current.nred > a {
-        background: @color_important !important;
+    .navi > li.nred > a:hover,
+    .navi > li.open.nred > a,
+    .navi > li.current.nred > a {
+        background: #{$color_important} !important;
         transition: background 0.5s ease;
     }
 
-    .sidebar .navi > li.nviolet > a:hover,
-    .sidebar .navi > li.open.nviolet > a,
-    .sidebar .navi > li.current.nviolet > a {
-        background: @color_violet !important;
+    .navi > li.nviolet > a:hover,
+    .navi > li.open.nviolet > a,
+    .navi > li.current.nviolet > a {
+        background: #{$color_violet} !important;
         transition: background 0.5s ease;
     }
 
-/* Sidebar dropdown */
+    /* Sidebar dropdown */
 
-    .sidebar .sidebar-dropdown* {
+    .sidebar-dropdown * {
         text-decoration: none;
     }
 
-    .sidebar .sidebar-dropdown {
+    .sidebar-dropdown {
         display: none;
     }
 
-        .sidebar .sidebar-dropdown a {
-            color: #ddd;
-            background-color: #343434;
-            padding: 6px;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 13px;
-            display: block;
-            border-top: 1px solid #666;
-            border-bottom: 1px solid #333;
-        }
+    .sidebar-dropdown a {
+        color: #ddd;
+        background-color: #343434;
+        padding: 6px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 13px;
+        display: block;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #333;
+    }
 
-            .sidebar .sidebar-dropdown a:hover {
-                text-decoration: none;
-            }
+    .sidebar-dropdown a:hover {
+        text-decoration: none;
+    }
 
     /* Sidebar widget */
 
-    .sidebar .sidebar-widget {
+    .sidebar-widget {
         padding: 10px 5px;
     }
 
-    .sidebar .ui-datepicker {
+    .ui-datepicker {
         width: 95%;
         margin: 0 auto;
         background: #111;
@@ -716,42 +714,42 @@ form {
         padding: 0;
     }
 
-    .sidebar .ui-datepicker-header {
+    .ui-datepicker-header {
         background: #222;
         border: 1px solid #212121;
     }
 
-    .sidebar .ui-datepicker-prev:hover {
+    .ui-datepicker-prev:hover {
         background: transparent;
         border: 0;
         top: 2px !important;
         left: 2px !important;
     }
 
-    .sidebar .ui-datepicker-next:hover {
+    .ui-datepicker-next:hover {
         background: transparent;
         border: 0;
         top: 2px !important;
         right: 2px !important;
     }
 
-    .sidebar .ui-state-default {
+    .ui-state-default {
         background: #222;
         border: 0;
         text-align: center;
         color: #ccc;
     }
 
-        .sidebar .ui-state-default:hover {
-            background: #282828;
-            color: #999;
-        }
+    .ui-state-default:hover {
+        background: #282828;
+        color: #999;
+    }
 
-    .sidebar .ui-state-hightlight, .sidebar .ui-state-active {
+    .ui-state-hightlight, .ui-state-active {
         background: #444;
     }
 
-
+}
 /* Main */
 
 .mainbar {
@@ -759,7 +757,7 @@ form {
     margin-left: 230px;
     margin-right: 0;
     width: auto;
-    background: #fff;
+    background: #888ccc;
     min-height: 900px;
 }
 
@@ -889,38 +887,38 @@ form {
     /* Widget colors */
 
     .widget.wred .widget-head {
-        background-color: @color_important;
-        border: 1px solid @color_important;
+        background-color: #{$color_important};
+        border: 1px solid #{$color_important};
         color: #fff;
     }
 
     .widget.wlightblue .widget-head {
-        background-color: @color_lightblue;
-        border: 1px solid @color_lightblue;
+        background-color: #{$color_lightblue};
+        border: 1px solid #{$color_lightblue};
         color: #fff;
     }
 
     .widget.wblue .widget-head {
-        background-color: @color_blue;
-        border: 1px solid @color_blue;
+        background-color: #{$color_blue};
+        border: 1px solid #{$color_blue};
         color: #fff;
     }
 
     .widget.wgreen .widget-head {
-        background-color: @color_success;
-        border: 1px solid @color_success;
+        background-color: #{$color_success};
+        border: 1px solid #{$color_success};
         color: #fff;
     }
 
     .widget.worange .widget-head {
-        background-color: @color_warning;
-        border: 1px solid @color_warning;
+        background-color: #{$color_warning};
+        border: 1px solid #{$color_warning};
         color: #fff;
     }
 
     .widget.wviolet .widget-head {
-        background-color: @color_violet;
-        border: 1px solid @color_violet;
+        background-color: #{$color_violet};
+        border: 1px solid #{$color_violet};
         color: #fff;
     }
 
@@ -1294,7 +1292,7 @@ body {
 }
 
     .sidebar .navi li ul li a:hover {
-        color: @color_lightblue;
+        color: #{$color_lightblue};
     }
 
     .sidebar .navi li ul li a:disabled {
@@ -1420,7 +1418,7 @@ small {
 .widget-content .padd:hover {
     cursor: pointer;
     color: white;
-    background-color: @color_lightblue;
+    background-color: #{$color_lightblue};
 }
 
     .widget-content .padd:hover * {

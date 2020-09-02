@@ -53,7 +53,7 @@
 
     "browser": true,
     "node": true,
-
+    "esversion": 9,
     "globals": {
         "angular": false
     }

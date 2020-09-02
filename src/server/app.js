@@ -23,10 +23,9 @@ app.use(compress());
 app.use(logger('dev'));
 app.use(cors());
 app.use(errorHandler.init);
-
 routes = require('./routes/index')(app);
 
-console.log('About to crank up node');
+console.log('About to crank up node server');
 console.log('PORT=' + port);
 console.log('NODE_ENV=' + environment);
 

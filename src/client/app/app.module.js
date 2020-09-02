@@ -1,7 +1,8 @@
 (function() {
 
     'use strict';
-
+    var i = 0;
+    var o = 4/0;
     angular.module('app', [
         /* Shared modules */
         'app.core',
@@ -12,5 +13,4 @@
         'app.dashboard',
         'app.layout'
     ]);
-
 })();
